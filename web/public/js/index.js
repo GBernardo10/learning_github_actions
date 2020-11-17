@@ -11,7 +11,7 @@ function makeDOM(args) {
   
   document.body.style = body;
   root.style = style;
-  root.innerHTML = root || "OFF";
+  root.innerHTML = args.msg || "OFF";
 }
 
 window.onload = makeDOM;
