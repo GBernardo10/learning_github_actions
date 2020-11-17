@@ -1,5 +1,7 @@
 function getData(...optios) {
-  fetch("http://api-portaltech.eastus.cloudapp.azure.com:3333/")
+  fetch("http://api-portaltech.eastus.cloudapp.azure.com:3333/", {
+    "Content-Security-Policy": "upgrade-insecure-requests",
+  })
     .then((res) => res.json().then(makeDOM))
     .catch(console.log);
 }
