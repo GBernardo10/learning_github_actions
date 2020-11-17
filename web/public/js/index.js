@@ -1,6 +1,6 @@
 function getData(...optios) {
   fetch("http://api-portaltech.eastus.cloudapp.azure.com:3333/", {
-    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Content-Security-Policy": "block-all-mixed-content",
   })
     .then((res) => res.json().then(makeDOM))
     .catch(console.log);
