@@ -14,4 +14,4 @@ function makeDOM(args) {
   root.innerHTML = args.msg || "OFF";
 }
 
-window.onload = makeDOM;
+window.onload = getData;
