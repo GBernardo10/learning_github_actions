@@ -6,6 +6,9 @@
   },
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "api":"node api/src/index.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
